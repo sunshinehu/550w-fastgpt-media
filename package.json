@@ -1,0 +1,27 @@
+{
+  "name": "550w-fastgpt-media",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "description": "550W media cleanup and asynchronous task tools for China",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "fastgpt-plugin build --minify",
+    "pack": "fastgpt-plugin pack --name 550w-fastgpt-cn"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@fastgpt-plugin/cli": "0.2.1",
+    "@fastgpt-plugin/sdk-factory": "0.0.1",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18",
+    "zod": "4.6.5",
+    "@types/node": "26.0.0"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
