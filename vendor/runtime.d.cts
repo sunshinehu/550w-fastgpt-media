@@ -71,6 +71,7 @@ export interface RemoveImageWatermarkParams {
     };
     sync?: boolean;
     operationId?: string;
+    idempotencyKey?: string;
 }
 export interface ImageWatermarkTaskDetailParams {
     taskId: string;
@@ -210,6 +211,6 @@ export declare const CREDENTIAL_APPLY_URL = "https://qzm.550wai.cn/api-keys";
 export declare const SUPPORTED_VIDEO_EXTENSIONS: readonly [".mp4", ".mov"];
 export declare const SUPPORTED_IMAGE_EXTENSIONS: readonly [".jpg", ".jpeg", ".png", ".bmp", ".webp", ".avif", ".tif", ".tiff", ".svg"];
 
-export declare function invoke(request: SkillRequest): Promise<SkillResponse>;
-/** Shared-host entry: never reads environment credentials or persists user secrets. */
+/** Restricted host entry: credentials are supplied per invocation; no local probes or credential store. */
 export declare function invokeWithCredentials(request: SkillRequest, credential: Credential): Promise<SkillResponse>;
+export type { ActionType } from "./types";

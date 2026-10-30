@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "editableOwner": "integrations/runtimes/media-agent",
+  "sourceOwner": "550W (Apache-2.0)",
   "runtimeVersion": "3.1.3",
-  "runtimeBundleSha256": "c062b7e79c57866a5aa1ee8babb69d187e0feecdc3a852d733b1ae76a4567223",
+  "runtimeBundleSha256": "599ee480a58013e535bb4717ef14041d3efbc7f483a6a9495b219eaa1343eaa1",
   "runtimeDependencyLockSha256": "f6d690d67bef2d898270bd2b98cb519aa008a7e970186635cf09879c7eeb4f7a",
-  "adapterDependencyLockSha256": "6e8a34cae8451d19712788d277608dfdf40f67c08dea12febc246a5c36a0fa4e",
-  "published": false
+  "adapterDependencyLockSha256": "213e69f330c772829522f27954552873072a304b59670d23d1e93be563b7fdf6",
+  "sourceIncluded": "vendor/source",
+  "rebuildCommand": "pnpm run rebuild:runtime"
 }

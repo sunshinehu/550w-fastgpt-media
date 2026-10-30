@@ -1,0 +1,1 @@
+export function integrationHeaders(){ return { 'X-550W-Product':'adapter-fastgpt', 'X-550W-Product-Version':"0.0.1", 'X-550W-Distribution':'fastgpt-cn' }; }
